@@ -167,3 +167,10 @@ body {
     font-size: 18px;
     font-weight: 400;
 }
+
+.format-basic:hover,
+.format-optimal:hover,
+.format-pro:hover {
+    margin-top: -20px;
+    margin-bottom: 20px;
+}

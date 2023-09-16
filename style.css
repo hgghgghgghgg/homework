@@ -166,6 +166,7 @@ body {
     font-family: Raleway;
     font-size: 18px;
     font-weight: 400;
+    text-transform: capitalize;
 }
 
 .format-basic:hover,

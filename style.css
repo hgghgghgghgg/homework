@@ -50,10 +50,37 @@ table {
 
 
 .header {
-    width: 100vw;
-    background-image: url("./images/backimg.png");
+    width: 100%;
+    background-image: 
+     linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+     url("./images/backimg.png")
+    ;
     background-repeat: no-repeat;
-    object-fit: cover;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+/* 
+    for differents screens
+*/
+
+@media only screen and (max-height: 700px) {
+    .header {
+        height: 700px;
+    }
+}
+
+@media only screen and (min-height: 700px) and (max-height: 900px) {
+    .header {
+        height: 900px;
+    }
+}
+
+@media only screen and (min-height: 900px) {
+    .header {
+        height: 1030px;
+    }
 }
 
 .navbar__logo-axit {
@@ -66,6 +93,7 @@ table {
 .navbar {
     display: block;
     position: sticky;
+    z-index: 1;
     top: 0;
     width: 100%;
     height: 75px;
@@ -165,11 +193,31 @@ table {
 
 .login-form {
     display: inline-block;
+    float: right;
     position: absolute;
+    z-index: 0;
     width: 470px;
     height: 375px;
     background-color: #ffffff;
     border-radius: 10px;
+}
+
+/* 
+    for different screens
+*/
+
+@media only screen and (max-width: 1274px) {
+    .login-form {
+        position: absolute;
+        right: 20px;
+    }
+}
+
+@media only screen and (min-width: 1274px) {
+    .login-form {
+        position: absolute;
+        right: 150px;
+    }
 }
 
 .login-form__headline {
@@ -220,4 +268,71 @@ table {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-top: 40px;
+}
+
+
+
+
+.social-media {
+    background-color: #f8efef;
+}
+
+.social-media__left, 
+.social-media__right {
+    display: inline-block;
+    height: 100%;
+}
+
+.social-media__left-text__headline {
+    width: 470px;
+    height: 60px;
+    display: flex;
+    margin-left: 100px;
+    flex-direction: column;
+    justify-content: center;
+    color: #333;
+    font-family: Open Sans;
+    font-size: 24px;    
+    font-weight: 700;
+}
+
+.social-media__left-text__about {
+    width: 470px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    color: #86878B;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+.social-media__right {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    float: right;
+}
+
+.social-media__right-icons__icon {
+    text-decoration: none;
+}
+
+.social-media__right-icons__facebook__image,
+.social-media__right-icons__twitter__image,
+.social-media__right-icons__linkedin__image,
+.social-media__right-icons__pinterest__image,
+.social-media__right-icons__instagram__image,
+.social-media__right-icons__github__image,
+.social-media__right-icons__rss__image {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
 }

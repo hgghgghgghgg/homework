@@ -217,14 +217,14 @@ table {
     header for different screens
 */
 
-@media only screen and (max-width: 1274px) {
+@media only screen and (max-width: 1360px) {
     .login-form {
         position: absolute;
         right: 20px;
     }
 }
 
-@media only screen and (min-width: 1274px) {
+@media only screen and (min-width: 1360px) {
     .login-form {
         position: absolute;
         right: 150px;

@@ -1,0 +1,255 @@
+
+.thoughts-flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    .thoughts {
+        width: 90%;
+        position: relative;
+        margin-bottom: 100px;
+        
+        .thoughts__headline {
+            font-size: 2rem;
+            font-weight: 400;
+            font-family: Karla, cursive;
+            color: #41424a;
+        }
+    
+        .thoughts__left {
+            margin-top: 50px;
+            display: inline-grid;
+    
+            .thoughts__left__headline {
+                width: 400px;
+                font-size: 3rem;
+                font-weight: 500;
+                font-family: cursive;
+                line-height: 4.5rem;
+    
+                .thoughts__left__headline__link {
+                    text-decoration: none;
+                    color: #41424a;
+                    transition: all 1.1s ease;
+    
+                    &:hover {
+                        color: #e5745d;
+                        transition: all 1.1s ease;
+                    }
+                }
+            }
+    
+            .thoughts__left__human {
+                display: flex;
+                flex-direction: row;
+                margin-top: 20px;
+    
+                .thoughts__left__human__image {
+                    border-radius: 50%;
+                    object-fit: fill;
+                    width: 100px;
+                    height: 100px;
+                }
+    
+                .thoughts__left__human__info {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 25px;
+                    margin-left: 10px;
+    
+                    .thoughts__left__human__info__name {
+    
+                        .thoughts__left__human__info__name__link {
+                            text-decoration: none;
+                            color: #41424a;
+                            font-size: 1.1rem;
+                            font-weight: 600;
+                            transition: all 0.5s ease;
+    
+                            &:hover {
+                                transition: all 0.5s ease;
+                                color: #e5745d;
+                            }
+                        }
+                    }
+    
+                    .thoughts__left__human__info__for-founders {
+                        width: 95px;
+                        margin-top: 5px;
+                        padding-bottom: 2px;
+    
+                        .thoughts__left__human__info__for-founders__link {
+                            text-decoration: none;
+                            color: #41424a;
+                            font-size: 1.1rem;
+                            font-weight: 400;
+                            transition: all 0.5s ease;
+                            border-bottom: 0.5px solid #41424a;
+    
+                            &:hover {
+                                border-bottom: 0.5px solid #e5745d;
+                                transition: all 0.5s ease;
+                                color: #e5745d;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .thoughts__right {
+            display: inline-grid;
+            position: absolute;
+            top: 60px;
+            margin-left: 100px;
+            width: 525px;
+            
+            .thoughts__right__top {
+                padding-bottom: 42px;
+                border-bottom: 0.3px solid rgba(229, 116, 93, 0.37);
+    
+                .thoughts__right__top__headline {
+                    font-size: 2.2rem;
+                    font-family: Karla, cursive;
+                    font-weight: 300;
+                    line-height: 45px;
+    
+                    .thoughts__right__top__headline__link {
+                        text-decoration: none;
+                        color: #41424a;
+                        transition: all 0.5s ease;
+    
+                        &:hover {
+                            border-bottom: 0.5px solid #e5745d;
+                            transition: all 0.5s ease;
+                            color: #e5745d;
+                            border: none;
+                            text-decoration: none;
+                        }
+                    }
+                }
+    
+                .thoughts__right__top__lists {
+                    margin-top: 30px;
+                    margin-left: 3px;
+                    list-style-type: none;
+    
+                    .thoughts__right__top__lists__gordon {
+                        font-size: 1.1rem;
+                        list-style-type: none;
+    
+                        .thoughts__right__top__lists__gordon__link {
+                            text-decoration: none;
+                            color: #41424a;
+    
+                            &:hover {
+                                transition: all 0.5s ease;
+                                color: #e5745d;
+                                text-decoration: none;
+    
+                                .thoughts__right__top__lists__gordon__link__bold {
+                                    transition: all 0.5s ease;
+                                    color: #e5745d;
+                                    text-decoration: none;
+                                }
+                            }
+    
+                            .thoughts__right__top__lists__gordon__link__bold {
+                                font-weight: 900;
+                                color: #000000;
+                            }
+                        }
+                    }
+    
+                    .thoughts__right__top__lists__jake {
+                        margin-top: 5px;
+                        list-style-type: none;
+                        font-size: 1.1rem;
+    
+                        .thoughts__right__top__lists__jake__link {
+                            color: #41424a;
+                            text-decoration: none;
+                            
+                            &:hover {
+                                transition: all 0.5s ease;
+                                color: #e5745d;
+                                text-decoration: none;
+    
+                                .thoughts__right__top__lists__jake__link__bold {
+                                    transition: all 0.5s ease;
+                                    color: #e5745d;
+                                    text-decoration: none;
+                                }
+                            }
+    
+                            .thoughts__right__top__lists__jake__link__bold {
+                                font-weight: 900;
+                                color: #000000;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+    
+                    .thoughts__right__top__lists__conviction {
+                        width: 123px;
+                        padding-bottom: 3px;
+                        margin-top: 5px;
+                        list-style-type: none;
+                        font-size: 1.1rem;
+    
+                        .thoughts__right__top__lists__conviction__link {
+                            color: #41424a;
+                            text-decoration: none;
+                            border-bottom: 0.5px solid rgba(65, 66, 74, 0.4);
+                            
+                            &:hover {
+                                border-bottom: 0.5px solid #e5745d;
+                                transition: all 0.5s ease;
+                                color: #e5745d;
+                                text-decoration: none;
+                            }
+                        } 
+                    }
+                }
+            }
+
+            .thoughts__right__bottom {
+                margin-top: 1px;
+                padding-top: 42px;
+                border-top: 0.3px solid rgba(229, 116, 93, 0.37);
+
+                .thoughts__right__bottom__headline {
+                    font-size: 2.3rem;
+
+                    .thoughts__right__bottom__headline__link {
+                        text-decoration: none;
+                        color: #41424a;
+
+                    }
+                }
+
+                .thoughts__right__bottom__lists {
+                    margin-top: 30px;
+
+                    .thoughts__right__bottom__lists__gordon {
+
+                        .thoughts__right__bottom__lists__gordon__link {
+
+                            .thoughts__right__bottom__lists__gordon__link__bold {
+
+                            }
+                        }
+                    }
+
+                    .thoughts__right__bottom__lists__conviction {
+                        
+                        .thoughts__right__bottom__lists__conviction__link {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

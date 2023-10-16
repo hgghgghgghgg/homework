@@ -43,10 +43,15 @@
     justify-items: center;
     justify-self: center;
     width: 90%;
-    height: 2625px;
+    height: 2525px;
     width: 90vw;
     margin-left: 4%;
     margin-top: 100px;
+
+    @media only screen and (min-width: 1350px) {
+        display: grid;
+        grid-template: repeat(2, 900px) / 1fr 1fr 1fr;
+    }
 
     @media only screen and (max-width: 1015px) {
         display: grid;
@@ -492,6 +497,10 @@
         height: 75px;
         margin-top: 40px;
         background-color: #ffffff;
+
+        @media only screen and (min-width: 1350px) {
+            grid-column: 2 / 3;
+        }
 
         @media only screen and (max-width: 895px) {
             grid-row: 7 / 8;
